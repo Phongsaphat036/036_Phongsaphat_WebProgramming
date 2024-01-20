@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Oswald&display=swap");
+ 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+ 
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: "Oswald", sans-serif; */
+}
+.navbar-brand {
+  color: #6b7b81;
+}
+ 
+.bg-body-tertiary {
+  background-color: white !important;
+}
+.myBtn {
+  color: white;
+  background-color: #02a4de;
+}
+.portfolio {
+  background-color: #ffb703;
+}
+.iconStyle {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  color: #1982c4;
+}
+  .bluetopic{
+    color: cornflowerblue;
+}
+
+.headerVSpace {
+  padding-top: 40px;
+}
+.figure-container{
+  display: flex;
+  gap: 20px;
+  
+}
+.email input{
+  border: 1px solid hsl(209, 95%, 34%);
+  outline: none;
+  background-color: #0662b8;
+  color: seashell;
+}.email input::placeholder{
+  color: rgba(255, 245, 238, 0.712);
+}
+
+.footer{
+  background-color:#0662b8;
+  color: aliceblue;
+}
+.bi-balloon{
+  color: white;
+  font-size: 80px;
+}
+.bi-instagram , .bi-twitter , .bi-facebook , .bi-globe{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.port{
+  color: aliceblue;
+  font-size: 60px;
+}
+.head1{
+  border-bottom: 2px solid rgb(15, 76, 117);
+  padding-bottom: 50px;
+}
