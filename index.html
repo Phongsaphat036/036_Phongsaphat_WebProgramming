@@ -1,72 +1,147 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>934-206 WebPrograming: 036 Phongsapat Kongmeesuk</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      
-      body {
-        font-size: 18px;
-        background-color: antiquewhite;
-      }
-      h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-      }
-      .topic {
-        color: red;
-        font-size: 20px;
-      }
-      .para {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 2em;
-      }
-      #footer {
-        background-color: gre;
-      }
-      
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
-    <h1>Heading</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus
-      quaerat nihil dolores molestias corrupti aut maxime quod neque et debitis
-      quibusdam, provident nemo minus eos. Perspiciatis exercitationem impedit
-      corporis!
-    </p>
-    <p class="para">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod nemo
-      ratione. Nesciunt blanditiis commodi exercitationem dolores ducimus saepe
-      vero id earum quas tenetur, et dicta, repellendus pariatur tempore. Quia.
-    </p> -->
-    <h1 id="top">036 Phongsapat Kongmeesuk Portfolio</h1>
-
-    <h2>Assignment</h2>
-    <ul>
-      <li>Ex1_</li>
-      <li><a href="Ex2/Ex2_036_Phongsapat.html">Ex2_MENU</a></li>
-      <li><a href="Ex3/EX3_031_036.html">Ex3_IS&IT Registeration Form</a></li>
-      <li><a href="Bootstrap2.html">Ex4_Bootstrap</a></li>
-    </ul>
-    <h1 class="topic">About Me</h1>
-    <p >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id alias
-      est, sapiente veniam doloremque sequi nemo quod inventore at modi ipsa,
-      provident quas atque aliquam quidem tempore optio omnis!
-    </p>
-    <div id="footer">
-      <h1 class="topic">Contact Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi
-        consequuntur exercitationem, laudantium, officia non repellendus aut
-        veniam soluta quidem quis, fuga eligendi officiis temporibus ullam ex
-        iste. At , rerumssdsdasda.
-      </p>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Phongsaphat Kongmeesuk</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-4">
+            <h1 class="pt-5">Hi, Im Phongsapat</h1>
+            <h2>Life is good as your mindset.</h2>
+            <p>
+              Im a 2nd year student on Information Technology Major in Prince Of Songkla University
+            </p>
+          </div>
+          <div class="col-8">
+            <img
+            src="new/pongsa.jpg" width="500px"
+            class="img-fluid"
+            alt="profile picture"
+          />
+          </div>
+      </div>
     </div>
+    <div class="container-fluid">
+      <div class="row portfolio mt-5 headerVSpace">
+
+          <h2 id="homework" class="text-center">Home Work</h2>
+
+          <div class="col-lg-3 col-md-4 col-sm-12 control mt-4">
+            <div class="card" style="width: 18rem;">
+              <img src="image/Screenshot 2024-01-21 195030.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Exercise 1</h5>
+                <p class="card-text">About the website's operating system.</p>
+                <a href="https://www.canva.com/design/DAF0zrIMoLo/6ayNzWER1OZ6d3S8O3YAkg/view" class="btn btn-primary">More</a>
+              </div>
+          </div>
+          </div>
+              
+          <div class="col-lg-3 col-md-4 col-sm-12 control mt-4">
+            <div class="card" style="width: 18rem;">
+              <img src="new/ex2.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Exercise 2</h5>
+                <p class="card-text">MENU <br>(did't apply css yet)</p>
+                <a href="Ex2/Ex2_036_Phongsapat.html" class="btn btn-primary">More</a>
+              </div>
+          </div>
+          </div>
+              
+            <div class="col-lg-3 col-md-4 col-sm-12 control mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="new/ex3.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exercise 3</h5>
+                  <p class="card-text">IS&IT Registeration Form<br>(did't apply css yet)</p>
+                  <a href="Ex3/EX3_031_036.html" class="btn btn-primary">More</a>
+                </div>
+            </div>
+            </div>
+              
+            <div class="col-lg-3 col-md-4 col-sm-12 control mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="new/ex4.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exercies 4</h5>
+                  <p class="card-text">How to use bootstrap</p>
+                  <a href="B" class="btn btn-primary">More</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12 control mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="new/ex5.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exercies 5</h5>
+                  <p class="card-text">Login Form</p>
+                  <a href="Check_Form_login/Check_Form_Login.html" class="btn btn-primary">More</a>
+                </div>
+            </div>
+            </div>
+              
+      </div>
+    </div>
+
+    
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
