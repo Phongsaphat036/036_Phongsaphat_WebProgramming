@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-image: url(images/login.gif);
+        color: white;
+      }
+      .lgin {
+        margin-top: 120px;
+      }
+      .error {
+        color: rgb(255, 59, 59);
+        margin-top: 5px;
+        font-size: 15px;
+      }.form-text{
+        color: whitesmoke;
+        text-size-adjust: bold;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function () {
+          let username = document.querySelector("#username").value;
+          let password = document.querySelector("#password").value;
+
+          let checkusername = false;
+          if (username.length >= 8) {
+            checkusername = true;
+            document.querySelector("#errorUsername").textContent = "";
+          } else {
+            checkusername = false;
+            document.querySelector("#errorUsername").textContent =
+              "ชื่อผู้ใช้ต้องมี 8 ตัวอักษรขึ้นไป";
+          }
+
+          let checkpassword = false;
+          if (password.length >= 8) {
+            checkpassword = true;
+            document.querySelector("#errorPassword").textContent = "";
+          } else {
+            checkpassword = false;
+            document.querySelector("#errorPassword").textContent =
+              "รหัสผ่านต้องมี 8 ตัวอักษรขึ้นไป";
+          }
+
+          if (checkusername && checkpassword) {
+            return true;
+          } else {
+            return false;
+          }
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 imgun">
+          <img src="images/unlock-removebg.png" alt="" />
+        </div>
+        <div class="col-md-6 col-lg-4 lgin">
+          <h1 class="mb-3">Sign in</h1>
+          <form action="https://www.example.com/" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Username</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+              <p id="errorUsername" class="error"></p>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input type="password" class="form-control" id="password" />
+              <p id="errorPassword" class="error"></p>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
